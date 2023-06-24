@@ -56,7 +56,7 @@ export default function Page() {
   }, [data]);
 
   return (
-    <div className="App font-alata w-screen h-screen justify-center items-center flex align-middle">
+    <div className="App bg-zinc-900 font-alata w-screen h-screen justify-center items-center flex align-middle">
       <CountDown
         centralDirectedTrains={centralDirectedTrains || []}
         walkingTime={walkingTime}

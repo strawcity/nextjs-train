@@ -32,19 +32,17 @@ const NextTrains = ({
     <div className="flex-col gap-3 flex w-1/2 p-8">
       {centralDirectedTrains?.map((train, index) => (
         <div className="flex flex-col" key={train.ExpectedDateTime}>
-          <h2
-            className={classNames("text-center p-6  border-4", {
-              "border-green-200":
+          <div
+            className={classNames("text-center p-6 font-thin  text-white", {
+              " bg-emerald-700 text-4xl py-32 font-medium ":
                 index === 0 &&
                 willYouMakeIt(train.ExpectedDateTime, walkingTime),
-              "bg-red-300": !willYouMakeIt(train.ExpectedDateTime, walkingTime),
-              "text-4xl py-32  bg-green-200":
-                index === 0 &&
-                willYouMakeIt(train.ExpectedDateTime, walkingTime),
+              "bg-red-200": !willYouMakeIt(train.ExpectedDateTime, walkingTime),
+              border: index !== 0,
             })}
           >
             {getDisplayMessage(train.ExpectedDateTime)}
-          </h2>
+          </div>
         </div>
       ))}
     </div>

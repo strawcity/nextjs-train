@@ -1,7 +1,7 @@
 import "./../globals.css";
-import { Alata } from "next/font/google";
+import { Jost } from "next/font/google";
 
-const alata = Alata({ subsets: ["latin"], weight: ["400"] });
+const alata = Jost({ subsets: ["latin"], weight: ["400", "200"] });
 
 export const metadata = {
   title: "Catch the train",

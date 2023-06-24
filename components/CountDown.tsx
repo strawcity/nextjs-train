@@ -65,7 +65,7 @@ const CountDown = ({ centralDirectedTrains, walkingTime }: CountDownProps) => {
         toMakeThisTrain && (
           <div
             className={classNames(
-              "w-1/2 relative flex flex-col justify-center align-middle items-center h-screen"
+              "w-1/2 relative flex text-white bg-zinc-800 flex-col justify-center align-middle items-center h-screen"
             )}
           >
             <div
@@ -73,8 +73,8 @@ const CountDown = ({ centralDirectedTrains, walkingTime }: CountDownProps) => {
               className={classNames(
                 "absolute b w-full bottom-0 transition-all duration-75",
                 {
-                  "bg-slate-200": toMakeThisTrain.minutes > 3,
-                  "bg-green-300":
+                  // "bg-zinc-800": toMakeThisTrain.minutes > 3,
+                  "bg-emerald-700":
                     toMakeThisTrain.minutes <= 3 &&
                     toMakeThisTrain.minutes >= 1,
                   "bg-orange-300": toMakeThisTrain.minutes === 0,
