@@ -33,12 +33,12 @@ const NextTrains = ({
       {centralDirectedTrains?.map((train, index) => (
         <div className="flex flex-col" key={train.ExpectedDateTime}>
           <div
-            className={classNames("text-center p-6 font-thin  text-white", {
-              " bg-emerald-700 text-4xl py-32 font-medium ":
+            className={classNames("text-center p-6  text-white", {
+              "bg-emerald-700 text-4xl py-32":
                 index === 0 &&
                 willYouMakeIt(train.ExpectedDateTime, walkingTime),
               "bg-red-200": !willYouMakeIt(train.ExpectedDateTime, walkingTime),
-              border: index !== 0,
+              "border font-thin": index !== 0,
             })}
           >
             {getDisplayMessage(train.ExpectedDateTime)}

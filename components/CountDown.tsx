@@ -71,9 +71,8 @@ const CountDown = ({ centralDirectedTrains, walkingTime }: CountDownProps) => {
             <div
               key={toMakeThisTrain.seconds}
               className={classNames(
-                "absolute b w-full bottom-0 transition-all duration-75",
+                "absolute b w-full bottom-0 transition-all duration-1000",
                 {
-                  // "bg-zinc-800": toMakeThisTrain.minutes > 3,
                   "bg-emerald-700":
                     toMakeThisTrain.minutes <= 3 &&
                     toMakeThisTrain.minutes >= 1,
