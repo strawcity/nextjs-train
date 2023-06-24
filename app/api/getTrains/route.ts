@@ -1,10 +1,3 @@
-// export async function GET(req: any) {
-//   const response = await getData();
-//   if (response) {
-//     return new Response(response);
-//   }
-// }
-
 import axios from "axios";
 import { NextResponse } from "next/server";
 

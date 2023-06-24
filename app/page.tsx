@@ -34,7 +34,7 @@ export default function Page() {
             setData(data);
           });
       }
-    }, 45000);
+    }, 60000);
 
     return function () {
       clearTimeout(interval);
